@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+    .topnav {
+        overflow: hidden;
+        background-color: #2f2626;
+        position: relative;
+        }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        background-color: #c5aa6a;
+        color: white;
+    }
+    .all-style {
+    border: solid;
+    border-radius: 1em;
+    background-color: peachpuff;
+    }
+    
+    section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: royalblue; /* Optional background color */
+    }
+    
+    .colour{
+    color:#000099;
+    text-align:center;
+    }
+    body {
+            background: linear-gradient(to bottom, #3e4c6c, #4f5a7f);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .all-style {
+            border: solid;
+            border-radius: 1em;
+            background-color: peachpuff;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .all-style ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .all-style ul li {
+            margin-bottom: 10px;
+        }
+
+        .style {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            margin: 20px;
+        }
+
+        .style a {
+            text-decoration: none;
+            color: #000099;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <div id="myLinks">
+        <a href="index-2.html">Education</a>
+        <a href="index-3.html">My programming skills</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <section>
+        <div class="all-style">
+            <h3>My hobbies:</h3>
+            <ul> 
+                <li>Playing computer games</li>
+                <li>Going to the gym</li>
+                <li>Playing golf</li>
+            </ul>
+
+            <h3>My Interests:</h3>
+            <ul>
+                <li>Digital currency</li>
+                <li>Golf</li>
+                <li>Workout</li>
+            </ul>
+        </div>
+
+        <div class="style">
+            <h2>Education:</h2>
+            <ol>
+                <li><a href="https://www.binabangsaschool.com">Highschool</a></li>
+                <li><a href="https://binus.ac.id">University (current)</a></li>
+            </ol>
+        </div>
+    </section>
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</html>
